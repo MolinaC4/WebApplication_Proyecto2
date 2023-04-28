@@ -1,0 +1,27 @@
+﻿@model WebApplication_Proyecto2.Models.UpdateClienteViewModel
+@{
+}
+
+<h1>Registrar Clientes</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Identificacion</label>
+        <input type="text" class="form-control" asp-for="N_Identificacion">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Fecha Nacimiento</label>
+        <input type="date" class="form-control" asp-for="Fec_Nac">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Cliente">Eliminar</button>
+</form>

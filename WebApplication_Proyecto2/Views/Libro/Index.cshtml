@@ -1,0 +1,24 @@
+﻿@model List<WebApplication_Proyecto2.Models.Domain.Libro>
+@{
+}
+<h1>Libros registrados</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código Libro</th>
+            <th>Nombre</th>
+            <th>Editorial</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Libro in Model)
+        {
+            <tr>
+                <td>@Libro.Id</td>
+                <td>@Libro.Nombre</td>
+                <td>@Libro.Nombre_Empresa</td>
+                <td><a href="Libro/View/@Libro.Id">Ver</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

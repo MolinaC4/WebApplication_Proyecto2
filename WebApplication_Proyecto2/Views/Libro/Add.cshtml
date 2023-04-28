@@ -1,0 +1,17 @@
+﻿@model WebApplication_Proyecto2.Models.AddLibroViewModel
+@{
+}
+
+<h1>Registrar Libros</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Autor</label>
+        <input type="text" class="form-control" asp-for="Nombre_Empresa">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

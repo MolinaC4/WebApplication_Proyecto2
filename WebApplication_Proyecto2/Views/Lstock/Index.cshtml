@@ -1,0 +1,28 @@
+﻿@model List<WebApplication_Proyecto2.Models.Domain.Lstock>
+@{
+}
+<h1>Libros Stock</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>>ID</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Código Cliente</th>
+            <th>Fecha ingreso</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Lstock in Model)
+        {
+            <tr>
+                <td>@Lstock.Id</td>
+                <td>@Lstock.Descripcion</td>
+                <td>@Lstock.Precio</td>
+                <td>@Lstock.Cod_Cliente</td>
+                <td>@Lstock.Fec_Ingreso</td>
+                <td><a href="Lstock/View/@Lstock.Id">Ver</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

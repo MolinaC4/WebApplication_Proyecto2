@@ -1,0 +1,26 @@
+﻿@model List<WebApplication_Proyecto2.Models.Domain.Cliente>
+@{
+}
+<h1>Clientes registrados</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código Cliente</th>
+            <th>Nombre</th>
+            <th>Identificación</th>
+            <th>Fecha Nacimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Cliente in Model)
+        {
+            <tr>
+                <td>@Cliente.Id</td>
+                <td>@Cliente.Nombre</td>
+                <td>@Cliente.N_Identificacion</td>
+                <td>@Cliente.Fec_Nac</td>
+                <td><a href="Cliente/View/@Cliente.Id">Ver</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

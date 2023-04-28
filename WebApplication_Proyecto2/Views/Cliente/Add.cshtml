@@ -1,0 +1,20 @@
+﻿@model WebApplication_Proyecto2.Models.AddClienteViewModel
+@{
+}
+
+<h1>Registrar Clientes</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Identificacion</label>
+        <input type="text" class="form-control" asp-for="N_Identificacion">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Fecha Nacimiento</label>
+        <input type="date" class="form-control" asp-for="Fec_Nac">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

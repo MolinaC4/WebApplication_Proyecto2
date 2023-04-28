@@ -1,0 +1,25 @@
+﻿@model WebApplication_Proyecto2.Models.AddLretiradosViewModel
+@{
+}
+
+<h1>Retirar Libros</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre</label>
+        <input type="text" class="form-control" asp-for="Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" asp-for="Descripcion">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Código Cliente</label>
+        <input type="text" class="form-control" asp-for="Cod_Cliente">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Fecha retiro</label>
+        <input type="date" class="form-control" asp-for="Fec_Retiro">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

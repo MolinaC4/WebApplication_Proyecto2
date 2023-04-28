@@ -1,0 +1,31 @@
+﻿@model WebApplication_Proyecto2.Models.UpdateLstockViewModel
+@{
+}
+
+<h1>Libros Stock</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Descripción</label>
+        <input type="text" class="form-control" asp-for="Descripcion">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Precio</label>
+        <input type="text" class="form-control" asp-for="Precio">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Código Cliente</label>
+        <input type="text" class="form-control" asp-for="Cod_Cliente">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Fecha ingreso</label>
+        <input type="date" class="form-control" asp-for="Fec_Ingreso">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Lstock">Eliminar</button>
+</form>

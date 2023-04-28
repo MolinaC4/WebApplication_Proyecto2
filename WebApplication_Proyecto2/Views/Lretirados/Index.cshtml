@@ -1,0 +1,28 @@
+﻿@model List<WebApplication_Proyecto2.Models.Domain.Lretirados>
+@{
+}
+<h1>Libros retirados</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>>ID</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Código Cliente</th>
+            <th>Fecha retiro</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Lretirados in Model)
+        {
+            <tr>
+                <td>@Lretirados.Id</td>
+                <td>@Lretirados.Nombre</td>
+                <td>@Lretirados.Descripcion</td>
+                <td>@Lretirados.Cod_Cliente</td>
+                <td>@Lretirados.Fec_Retiro</td>
+                <td><a href="Lretirados/View/@Lretirados.Id">Ver</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
